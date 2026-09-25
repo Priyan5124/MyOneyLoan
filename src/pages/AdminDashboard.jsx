@@ -66,11 +66,11 @@ function AdminDashboard() {
                 statsResponse,
             ] = await Promise.all([
                 fetch(
-                    "http://localhost:5000/api/admin/applications"
+                    "https://myoneyloan.onrender.com/api/admin/applications"
                 ),
 
                 fetch(
-                    "http://localhost:5000/api/admin/stats"
+                    "https://myoneyloan.onrender.com/api/admin/stats"
                 ),
             ]);
 
@@ -286,7 +286,7 @@ function AdminDashboard() {
             );
 
             const response = await fetch(
-                `http://localhost:5000/api/admin/applications/${selectedApplication._id}/approve`,
+                `https://myoneyloan.onrender.com/api/admin/applications/${selectedApplication._id}/approve`,
                 {
                     method: "PUT",
 
@@ -380,7 +380,7 @@ function AdminDashboard() {
             setProcessingId(id);
 
             const response = await fetch(
-                `http://localhost:5000/api/admin/applications/${id}/reject`,
+                `https://myoneyloan.onrender.com/api/admin/applications/${id}/reject`,
                 {
                     method: "PUT",
                 }
@@ -1124,7 +1124,7 @@ function AdminDashboard() {
                                                 key={name}
                                                 href={
                                                     file
-                                                        ? `http://localhost:5000${file}`
+                                                        ? `https://myoneyloan.onrender.com${file}`
                                                         : "#"
                                                 }
                                                 target="_blank"

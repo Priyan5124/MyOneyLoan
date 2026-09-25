@@ -174,7 +174,7 @@ function LoanApplication() {
 
                 const response =
                     await fetch(
-                        "http://localhost:5000/api/loans/my-status",
+                        "https://myoneyloan.onrender.com/api/loans/my-status",
                         {
                             headers: {
                                 Authorization:
@@ -1112,7 +1112,7 @@ function LoanApplication() {
             const response =
                 await fetch(
 
-                    "http://localhost:5000/api/loans/apply",
+                    "https://myoneyloan.onrender.com/api/loans/apply",
 
                     {
 
@@ -1167,7 +1167,7 @@ function LoanApplication() {
 
                 throw new Error(
 
-                    "Backend returned an invalid response. Make sure the backend is running on http://localhost:5000 and the /api/loans/apply route is available."
+                    "Backend returned an invalid response. Make sure the backend is running on https://myoneyloan.onrender.com and the /api/loans/apply route is available."
 
                 );
 

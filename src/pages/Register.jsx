@@ -81,7 +81,7 @@ function Register() {
 
             const response =
                 await fetch(
-                    "http://localhost:5000/api/auth/send-otp",
+                    "https://myoneyloan.onrender.com/api/auth/send-otp",
                     {
                         method: "POST",
 
@@ -187,7 +187,7 @@ function Register() {
 
             const response =
                 await fetch(
-                    "http://localhost:5000/api/auth/verify-otp",
+                    "https://myoneyloan.onrender.com/api/auth/verify-otp",
                     {
                         method: "POST",
 
@@ -306,7 +306,7 @@ function Register() {
 
             const response =
                 await fetch(
-                    "http://localhost:5000/api/auth/register",
+                    "https://myoneyloan.onrender.com/api/auth/register",
                     {
                         method: "POST",
 

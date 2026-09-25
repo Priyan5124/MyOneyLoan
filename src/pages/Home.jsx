@@ -41,7 +41,7 @@ function Home() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/loans/my-status",
+        "https://myoneyloan.onrender.com/api/loans/my-status",
         {
           method: "GET",
           headers: {
@@ -310,7 +310,7 @@ function Home() {
       setAcceptingOffer(true);
 
       const response = await fetch(
-        "http://localhost:5000/api/loans/my-offer/accept",
+        "https://myoneyloan.onrender.com/api/loans/my-offer/accept",
         {
           method: "PUT",
           headers: {
@@ -401,7 +401,7 @@ function Home() {
     );
     const outstanding =
       loanOffer.outstandingAmount !== undefined &&
-      loanOffer.outstandingAmount !== null
+        loanOffer.outstandingAmount !== null
         ? Number(loanOffer.outstandingAmount)
         : Math.max(totalRepayment - paidAmount, 0);
 
